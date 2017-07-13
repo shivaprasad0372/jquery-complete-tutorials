@@ -1,0 +1,19 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p>this is pharagrapgh</p>
+<button onclick="appendText()">AppendText</button>
+<script>
+function appendText(){
+var txt1 = "<p>text</p>";
+var txt2 = $("<p></p>").text("text.");
+var txt3 = document.createElement("p");
+txt3.innerHTML = "text.";
+$("body").append(txt1,txt2,txt3);
+}
+
+</script>
+</body>
+</html>

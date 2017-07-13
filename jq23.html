@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p>this is text and html content</p>
+<button id="text">text</button>
+<button id="html">html</button>
+<script>
+$(document).ready(function(){
+$("#text").click(function(){
+alert("text is "+$("p").text());
+});
+$("#html").click(function(){
+alert("html is "+$("p").html());
+});
+});
+
+</script>
+</body>
+</html>

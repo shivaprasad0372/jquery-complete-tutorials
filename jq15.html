@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+<style>
+#sp, #pk{
+padding : 5px;
+text-align : center;
+background-color : #e5eecc;
+border: solid 1px #c3c3c3; 
+}
+#sp {
+padding : 50px;
+}
+</style>
+</head>
+<body>
+<p id="pk">click</p>
+<p id="sp">show</p>
+<script>
+$(document).ready(function(){
+$("#pk").click(function(){
+$("#sp").slideToggle("slow"); <!-- slideUp-->
+});
+});
+</script>
+</body>
+</html>

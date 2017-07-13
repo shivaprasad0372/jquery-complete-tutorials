@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<button>click here</button>
+<div style="background:#98bf21;height:100px;width:200px;position:absolute;">hello</div>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+var div =$("div");
+div.animate({left: '100px'},"slow");
+div.animate({fontSize: '5em'},"slow");
+});
+});
+</script>
+</body>
+</html>

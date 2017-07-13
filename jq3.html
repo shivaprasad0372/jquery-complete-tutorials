@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p>this is first pharagraph tag</p>
+<p>this is second pharagraph tag</p>
+<p>this is third pharagrph tag</p>
+<p>this is fourth pharagrapgh tag</p>
+<br>
+<button>hide</button>
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("p:even").hide();     <!--odd-->
+});
+});
+</script>
+</body>
+</html>

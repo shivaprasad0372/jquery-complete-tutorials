@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p id="text1">this is text content</p><br>
+<p id="text2">this is header content</p><br>
+<input type="text" id="text3" value="abhilasha"/><br>
+<button id="btn1">set text</button>
+<button id="btn2">set html</button>
+<button id="btn3">set value</button>
+
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("#text1").text("hello world");
+});
+$("#btn2").click(function(){
+$("#text2").html("<h3>this is header tag</h3>");
+});
+$("#btn3").click(function(){
+$("#text3").val("shiva prasad");
+});
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<img src="w3jquery.gif"><br>
+<p>Click the button to insert text after the image.</p>
+
+<button onclick="afterText()">Insert after</button>
+<script>
+function afterText(){
+var txt1 = "<b>I</b>";
+var txt2 = $("<i></i>").text("love ");
+var txt3 = document.createElement("b");
+txt3.innerHTML = "shiva<br>";
+$("img").after(txt1,txt2,txt3);
+}
+</script>
+</body>
+</html>

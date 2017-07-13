@@ -1,0 +1,26 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<p id="test1">This is a <b>bold</b> paragraph.</p>
+<p id="test2">This is another <b>bold</b> paragraph.</p>
+
+<button id="btn1">Show Old/New Text</button>
+<button id="btn2">Show Old/New HTML</button>
+<script>
+$(document).ready(function(){
+$("btn1").click(function(){
+$("text1").text(function(i, orgtxt){
+return "old text: "+orgtxt+" new text: hello world(index: "+i+")";
+});
+});
+$("btn2").click(function(){
+$("text2").text(function(i,orgtxt){
+return "old html: "+orgtxt+" new html is: hello <b>hello shiva</b>(index: "+i+")";
+});
+});
+});
+</script>
+</body>
+</html>

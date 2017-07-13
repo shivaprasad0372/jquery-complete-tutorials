@@ -1,0 +1,21 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<div id="div1" style='width:80px;height:80px;display:none;background-color:red;'></div><br>
+<div id="div2" style='width:80px;height:80px;display:none;background-color:green'></div><br>
+<div id="div3" style='width:80px;height:80px;display:none;background-color:blue'></div><br>
+<button>click hear</button>
+
+<script>
+$(document).ready(function(){
+$("button").click(function(){
+$("#div1").fadeIn();
+$("#div2").fadeIn("slow");
+$("#div3").fadeIn(3000);
+});
+});
+</script>
+</body>
+</html>

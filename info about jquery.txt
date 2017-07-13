@@ -1,0 +1,16 @@
+jquery is a javascirpt library. its light wieght programming languge, its caption is wite less, do more.
+its having css maniplaction
+DOM maniplication
+utility
+events
+ajax
+
+
+
+starting with jquery:
+1>download jquery document file.  https://jquery.com/download/
+2>then shuld use CDN file from which are Microsoft or Google.
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"
+                            or
+"https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"
+							

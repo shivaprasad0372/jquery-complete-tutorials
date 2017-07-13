@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jq.css">
+</head>
+<body>
+
+<button id="stop">stop</button>
+<button id="showing">show</button>
+<div id="show">show</div>
+<script>
+$(document).ready(function(){
+    $("#showing").click(function(){
+        $("#show").slideDown(5000);
+    });
+    $("#stop").click(function(){
+        $("#show").stop();
+    });
+});
+</script>
+</body>
+</html>

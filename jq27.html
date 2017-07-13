@@ -1,0 +1,20 @@
+<html>
+<head>
+<script src="jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<img src="w3jquery.gif"><br>
+<button id="btn1">before</button>
+<button id="btn2">after</button>
+<script>
+$(document).ready(function(){
+$("#btn1").click(function(){
+$("img").before("<b>before</b>");
+});
+$("#btn2").click(function(){
+$("img").after("<b>after</b>");
+});
+});
+</script>
+</body>
+</html>
